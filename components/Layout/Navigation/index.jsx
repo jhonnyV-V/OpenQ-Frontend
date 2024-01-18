@@ -7,7 +7,6 @@ import ConnectButton from '../../WalletConnect/ConnectButton';
 import Image from 'next/image';
 import { ThreeBarsIcon } from '@primer/octicons-react';
 import LinkDropdown from '../../Utils/LinkDropdown';
-import NavLinks from '../NavLinks/index';
 import LoadingThread from '../../Loading/LoadingThread';
 import NotificationBell from '../../Notifications/NotificationBell';
 import ContractWizard from '../../ContractWizard/index';
@@ -146,7 +145,6 @@ const Navigation = () => {
                 {quickSearch && <LinkDropdown items={items} />}
               </div>
             )}
-            <NavLinks appState={appState} setOpenMenu={setOpenMenu} />
           </div>
         </div>
       ) : null}
@@ -174,7 +172,6 @@ const Navigation = () => {
                     {quickSearch && <LinkDropdown items={items} />}
                   </div>
                 )}
-                <NavLinks appState={appState} setOpenMenu={setOpenMenu} />
                 {/* <button onClick={() => setShowModal(true)} className='pl-4 flex items-center'>
                   <QuestionIcon size={16} className='fill-muted hover:fill-primary' />
                 </button> */}
